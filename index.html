@@ -1,65 +1,119 @@
 <!doctype html>
 <html lang="nl">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#21382e">
-<meta name="description" content="CASA VINOLIO — Italiaanse olijfolie, wijn en delicatessen, persoonlijk geselecteerd door Juup.">
-<title>CASA VINOLIO | Wijn, olijfolie & delicatessen</title>
-<link rel="stylesheet" href="/styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#263a2e">
+  <meta name="description" content="CASA VINOLIO van Juup Biesboer. Italiaanse olijfolie, wijn en delicatessen, persoonlijk op bestelling vanaf Texel.">
+  <meta property="og:title" content="CASA VINOLIO — Alle tijd. Alle smaak.">
+  <meta property="og:description" content="Italiaanse wijn, olijfolie en delicatessen. Vraag Juup naar de mogelijkheden.">
+  <title>CASA VINOLIO — Italiaanse smaken van Juup</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
 </head>
 <body>
-<div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="gate-title">
-  <div class="gate-card">
-    <div class="gate-mark">CASA VINOLIO</div>
-    <div class="age-circle">18+</div>
-    <h1 id="gate-title">Ben je 18 jaar of ouder?</h1>
-    <p>CASA VINOLIO biedt ook Italiaanse wijn aan. Daarom vragen we je leeftijd voordat je verdergaat.</p>
-    <div class="gate-buttons"><button type="button" id="accept">Ja, ik ben 18 jaar of ouder</button><button class="secondary" type="button" id="reject">Nee, ik ben jonger dan 18</button></div>
-    <p class="gate-foot">NIX18 — geen alcohol onder de 18.</p>
-    <p id="denied" hidden>Je kunt deze website niet bekijken zolang je jonger bent dan 18.</p>
+  <a class="skip-link" href="#inhoud">Ga naar de inhoud</a>
+  <div class="age-gate" id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-heading">
+    <div class="gate-panel">
+      <img class="gate-logo" src="assets/logo.png" alt="CASA VINOLIO">
+      <div class="gate-rule"></div>
+      <p class="overline">Welkom bij CASA VINOLIO</p>
+      <h2 id="age-heading">Ben je 18 jaar of ouder?</h2>
+      <p class="gate-copy">Op onze website vind je ook Italiaanse wijn. Daarom vragen we eerst naar je leeftijd.</p>
+      <div class="gate-controls">
+        <button class="button button-green" id="age-yes" type="button">Ja, ik ben 18 jaar of ouder <span aria-hidden="true">↗</span></button>
+        <button class="button button-plain" id="age-no" type="button">Nee, ik ben jonger dan 18</button>
+      </div>
+      <p class="gate-denied" id="gate-denied" hidden>Deze website is uitsluitend bestemd voor bezoekers van 18 jaar en ouder.</p>
+      <div class="gate-nix"><span class="nix-logo" aria-hidden="true">NIX<span>18</span></span><span>Geen alcohol onder de 18.</span></div>
+    </div>
   </div>
-</div>
-<div class="topline"><div class="container"><span>ITALIAANSE SMAKEN, PERSOONLIJK GESELECTEERD</span><span>NIX18 · WIJN UITSLUITEND 18+</span></div></div>
-<header class="header"><div class="container nav">
-  <a class="brand" href="#home"><img src="/assets/logo.png" alt="" onerror="this.style.display='none'"><span>CASA VINOLIO<small>Wijn · Olijfolie · Delicatessen</small></span></a>
-  <button class="menu-toggle" aria-expanded="false" aria-label="Open menu">Menu</button>
-  <nav class="navlinks"><a href="#assortiment">Assortiment</a><a href="#juup">Over Juup</a><a href="#bestellen">Bestellen</a><a href="#contact">Contact</a></nav>
-  <a class="nav-cta" href="#contact">Neem contact op <span>↗</span></a>
-</div></header>
-<main>
-<section class="hero" id="home">
-  <div class="hero-image" role="img" aria-label="Italiaanse wijn, olijfolie en delicatessen"></div>
-  <div class="hero-shade"></div>
-  <div class="container hero-content"><div class="hero-copy">
-    <p class="eyebrow">CASA VINOLIO • TEXEL</p>
-    <h1>Een stukje Italië.<br><em>Bij jou op tafel.</em></h1>
-    <p class="hero-intro">Italiaanse wijn, goede olijfolie en delicatessen. Met zorg gekozen, zonder poespas.</p>
-    <a class="button light" href="#assortiment">Ontdek CASA VINOLIO <span>↗</span></a>
-  </div></div>
-  <div class="hero-bottom"><span>CURATED BY JUUP</span><span>SCROLL OM TE ONTDEKKEN ↓</span></div>
-</section>
-<section class="intro"><div class="container intro-grid">
-  <p class="eyebrow dark">BUON GUSTO</p><p>Het beste van Italië hoeft niet ingewikkeld te zijn. Een goede fles, een mooie olie en iets lekkers op tafel. Meer heb je soms niet nodig.</p>
-</div></section>
-<section class="section" id="assortiment"><div class="container">
-  <div class="section-heading"><div><p class="eyebrow dark">ONZE SELECTIE</p><h2>Wat vind je bij ons?</h2></div><p>Het aanbod wisselt. Vraag Juup naar de actuele selectie en beschikbaarheid.</p></div>
-  <div class="products">
-    <article class="product olive"><span class="product-index">01 / 03</span><div><h3>Olijfolie</h3><p>Vol karakter. Voor in de keuken én op tafel.</p><a href="#contact">Informeer naar het aanbod ↗</a></div></article>
-    <article class="product wine"><span class="product-index">02 / 03</span><div><h3>Italiaanse wijn</h3><p>Voor een diner, een goed gesprek of gewoon omdat het kan.</p><a href="#contact">Vraag naar de selectie ↗</a></div></article>
-    <article class="product food"><span class="product-index">03 / 03</span><div><h3>Delicatessen</h3><p>Kleine dingen die een tafel bijzonder maken.</p><a href="#contact">Ontdek de mogelijkheden ↗</a></div></article>
-  </div>
-</div></section>
-<section class="story" id="juup"><div class="container story-grid">
-  <div class="story-photo"><img src="/assets/juup.jpg" alt="Juup Biesboer" onerror="this.style.display='none'"></div>
-  <div class="story-copy"><p class="eyebrow dark">DE PERSOON ACHTER CASA VINOLIO</p><h2>Ciao, ik ben Juup.</h2><p>CASA VINOLIO is ontstaan vanuit mijn liefde voor Italië en alles wat daarbij hoort: mooie producten, lange avonden en goed eten.</p><p>Ik selecteer liever een paar producten waar ik echt achter sta dan een eindeloze lijst waar je doorheen moet zoeken. Heb je iets nodig voor een diner, borrel of cadeau? Stuur me gerust een bericht.</p><a class="underlink" href="#contact">Neem contact op met Juup ↗</a></div>
-</div></section>
-<section class="order section" id="bestellen"><div class="container order-grid"><div><p class="eyebrow">HOE HET WERKT</p><h2>Gewoon even<br><em>Juup appen.</em></h2></div><div><p>Laat weten waar je naar op zoek bent. Juup vertelt je wat er beschikbaar is, wat het kost en hoe je het kunt ontvangen.</p><a class="button light" href="https://wa.me/31682670111" target="_blank" rel="noopener noreferrer">Stuur een WhatsApp ↗</a><p class="order-small">Een bericht sturen is vrijblijvend.</p></div></div></section>
-<section class="section contact" id="contact"><div class="container contact-grid">
-  <div><p class="eyebrow dark">CONTACT</p><h2>Een vraag of<br>iets bestellen?</h2><p>Neem direct contact op met Juup. Geen formulieren, geen ingewikkelde stappen.</p></div>
-  <div class="contact-details"><a href="https://wa.me/31682670111" target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><strong>06 8267 0111 ↗</strong></a><a href="mailto:juupbiesboer@gmail.com"><span>E-mail</span><strong>juupbiesboer@gmail.com ↗</strong></a><div><span>Locatie</span><strong>Texel, Nederland</strong></div></div>
-</div></section>
-<section class="responsibility"><div class="container responsibility-inner"><div class="age-circle small">18+</div><p><strong>NIX18 — geen alcohol onder de 18.</strong><br>CASA VINOLIO verkoopt wijn uitsluitend aan volwassenen. Bij aankoop en aflevering gelden de wettelijke leeftijdscontrole-eisen. Geniet bewust.</p></div></section>
-</main>
-<footer><div class="container foot"><div><strong>CASA VINOLIO</strong><p>Wijn · Olijfolie · Delicatessen</p></div><div><span>© 2026 CASA VINOLIO</span><span>Conceptwebsite — aanbod en inhoud onder voorbehoud</span></div></div></footer>
-<script src="/script.js"></script>
-</body></html>
+
+  <div class="eyebrow-bar"><div class="shell"><span>CASA VINOLIO <b aria-hidden="true">/</b> Wijn, olijfolie & delicatessen</span><span>Persoonlijk op bestelling · Texel</span></div></div>
+  <header class="site-header">
+    <div class="shell nav-row">
+      <a class="brand" href="#home" aria-label="CASA VINOLIO, naar boven"><img src="assets/logo.png" alt="CASA VINOLIO"></a>
+      <nav class="nav-links" id="main-nav" aria-label="Hoofdnavigatie">
+        <a href="#assortiment">Assortiment</a>
+        <a href="#juup">Over Juup</a>
+        <a href="#hoe-werkt-het">Zo werkt het</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="wishlist-toggle" id="open-wishes" type="button" aria-haspopup="dialog">Mijn wensen <span class="wishlist-count" id="wishlist-count" hidden>0</span></button>
+        <a class="nav-contact" href="#contact">Vraag het Juup <span aria-hidden="true">↗</span></a>
+        <button class="menu-toggle" id="menu-toggle" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Open navigatie"><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="inhoud">
+    <section class="hero" id="home" aria-label="Welkom bij CASA VINOLIO">
+      <div class="hero-photograph" aria-hidden="true"></div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="shell hero-inner">
+        <div class="hero-copy">
+          <p class="overline overline-light">Italiaanse smaken op Texel</p>
+          <h1>Alle tijd.<br><em>Alle smaak.</em></h1>
+          <p>Wijn, olijfolie en delicatessen. Voor wie graag iets goeds op tafel zet.</p>
+          <div class="hero-actions">
+            <a href="#assortiment" class="button button-cream">Bekijk het assortiment <span aria-hidden="true">↗</span></a>
+            <a href="#juup" class="hero-secondary">Ontmoet Juup <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-bottom shell"><span>CASA VINOLIO · TEXEL</span><span>Ontdek meer <span aria-hidden="true">↓</span></span></div>
+    </section>
+
+    <div class="intro-line"><div class="shell intro-inner"><span>Goed gekozen producten.</span><span>Rechtstreeks contact met Juup.</span><span>Bestellen in overleg.</span></div></div>
+
+    <section class="section collection-section" id="assortiment">
+      <div class="shell">
+        <div class="section-lead">
+          <div><p class="overline">Het assortiment</p><h2>Voor op tafel.<br><em>Of om weg te geven.</em></h2></div>
+          <p>Geen eindeloze catalogus. Een selectie Italiaanse smaken waar je Juup gewoon naar kunt vragen.</p>
+        </div>
+        <div class="collection-grid">
+          <article class="collection-card card-olio"><div class="card-top"><span>01 / OLIO</span><span class="fine-mark" aria-hidden="true">✳</span></div><div class="card-copy"><h3>Olijfolie</h3><p>Voor bij vers brood, over een salade of om dagelijks mee te koken.</p><button class="interest-button" type="button" data-interest="Olijfolie" aria-pressed="false">Voeg toe aan mijn wensen <span aria-hidden="true">↗</span></button></div></article>
+          <article class="collection-card card-vino"><div class="card-top"><span>02 / VINO</span><span class="small18">18+</span></div><div class="card-copy"><h3>Italiaanse wijn</h3><p>Een fles voor bij het eten of voor een avond die nog even duurt.</p><button class="interest-button" type="button" data-interest="Italiaanse wijn (18+)" aria-pressed="false">Voeg toe aan mijn wensen <span aria-hidden="true">↗</span></button></div></article>
+          <article class="collection-card card-sapori"><div class="card-top"><span>03 / SAPORI</span><span class="fine-mark" aria-hidden="true">✳</span></div><div class="card-copy"><h3>Delicatessen</h3><p>Voor de borrel, een diner of zomaar iets lekkers tussendoor.</p><button class="interest-button" type="button" data-interest="Italiaanse delicatessen" aria-pressed="false">Voeg toe aan mijn wensen <span aria-hidden="true">↗</span></button></div></article>
+        </div>
+        <div class="collection-note"><p>Producten en prijzen zijn afhankelijk van de actuele beschikbaarheid. Je vraagt vrijblijvend het aanbod op.</p><a href="#contact">Iets specifieks in gedachten? <span aria-hidden="true">↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="story-section" id="juup"><div class="story-photo"><img src="assets/juup.jpg" alt="Juup Biesboer" loading="lazy"></div><div class="story-content"><p class="overline">Aangenaam</p><h2>Ik ben Juup.</h2><p>Met CASA VINOLIO wil ik mooie Italiaanse producten op een eenvoudige manier bij mensen op tafel brengen.</p><p>Niet met een ingewikkelde webshop, maar met een goed aanbod en direct contact. Zoek je iets voor een borrel, een diner of een cadeau? Stuur me gerust een bericht.</p><a class="text-link" href="#contact">Neem contact op <span aria-hidden="true">↗</span></a></div></section>
+
+    <section class="pour-section" aria-labelledby="pour-heading"><div class="shell pour-grid"><div class="pour-copy"><p class="overline">La dolce vita</p><h2 id="pour-heading">Dat eerste glas.<br><em>De rest komt vanzelf.</em></h2><p>Soms begint een goede avond heel eenvoudig. Met een glas wijn, iets lekkers en alle tijd.</p><a href="#hoe-werkt-het" class="text-link">Zo werkt bestellen <span aria-hidden="true">↗</span></a></div><div class="pour-visual"><div class="pour-stage" id="pour-stage" aria-label="Illustratie van wijn die wordt ingeschonken">
+<svg class="pour-art" fill="none" viewbox="0 0 600 680">
+<defs>
+<lineargradient gradientunits="userSpaceOnUse" id="wine-liquid" x1="205" x2="390" y1="350" y2="530"><stop stop-color="#a3353b"></stop><stop offset=".5" stop-color="#711e30"></stop><stop offset="1" stop-color="#420f22"></stop></lineargradient>
+<lineargradient gradientunits="userSpaceOnUse" id="glass-edge" x1="180" x2="420" y1="300" y2="500"><stop stop-color="#fff"></stop><stop offset=".3" stop-color="#b1a894"></stop><stop offset=".6" stop-color="#fff"></stop><stop offset="1" stop-color="#b3aa95"></stop></lineargradient>
+<lineargradient id="bottle-glass"><stop stop-color="#15251c"></stop><stop offset=".28" stop-color="#486047"></stop><stop offset=".43" stop-color="#6a7c52"></stop><stop offset=".62" stop-color="#263d2b"></stop><stop offset="1" stop-color="#13241b"></stop></lineargradient>
+<clippath id="bowl-clip"><path d="M209 289C195 330 185 382 202 419C218 454 254 468 280 468C306 468 343 454 358 419C375 382 365 330 351 289Z"></path></clippath>
+<filter id="soft-shadow"><fegaussianblur stddeviation="10"></fegaussianblur></filter>
+</defs>
+<ellipse cx="290" cy="616" fill="#7d7656" filter="url(#soft-shadow)" opacity=".13" rx="132" ry="12"></ellipse>
+<g class="bottle"><g transform="translate(276 172) rotate(40)"><path d="M-17 0H17V-63Q17-82 37-94Q48-101 48-122V-273Q48-289 32-289H-32Q-48-289-48-273V-122Q-48-101-37-94Q-17-82-17-63Z" fill="url(#bottle-glass)"></path><rect fill="#1b3022" height="29" rx="3" width="36" x="-18" y="-29"></rect><path d="M-29-263V-130" stroke="#b5bd88" stroke-opacity=".3" stroke-width="4"></path><rect fill="#e9e0c8" height="92" rx="1" width="88" x="-44" y="-229"></rect><path d="M-24-211H24M-24-155H24" stroke="#b2985a"></path><text fill="#37432a" font-family="Georgia" font-size="12" text-anchor="middle" x="0" y="-187">VINO</text><text fill="#8e7550" font-family="Arial" font-size="5" letter-spacing="2" text-anchor="middle" x="0" y="-173">ITALIANO</text></g></g>
+<path class="wine-stream" d="M276 171C280 220 280 302 280 416" stroke="#802137" stroke-linecap="round" stroke-width="4"></path>
+<path d="M209 289C195 330 185 382 202 419C218 454 254 468 280 468C306 468 343 454 358 419C375 382 365 330 351 289" fill="#fff" fill-opacity=".17"></path>
+<g clip-path="url(#bowl-clip)"><g class="liquid-rise"><path d="M180 398Q230 389 280 398T380 398V485H180Z" fill="url(#wine-liquid)"></path><ellipse cx="280" cy="398" fill="#b64e50" opacity=".7" rx="92" ry="7"></ellipse><path d="M211 416Q217 445 250 451" stroke="#e59f88" stroke-linecap="round" stroke-opacity=".28" stroke-width="3"></path></g></g>
+<path d="M209 289C195 330 185 382 202 419C218 454 254 468 280 468C306 468 343 454 358 419C375 382 365 330 351 289" stroke="url(#glass-edge)" stroke-width="2"></path>
+<ellipse cx="280" cy="289" rx="71" ry="10" stroke="url(#glass-edge)" stroke-width="2"></ellipse>
+<path d="M277 470V583Q277 593 252 597L220 603Q211 606 223 609Q280 621 337 609Q349 606 340 603L308 597Q283 593 283 583V470" fill="#fff" fill-opacity=".22" stroke="url(#glass-edge)" stroke-width="2"></path>
+<path d="M213 315Q198 371 211 403" stroke="white" stroke-linecap="round" stroke-opacity=".8" stroke-width="4"></path>
+</svg>
+</div><button class="replay-button" id="replay-pour" type="button">Schenk nog eens <span aria-hidden="true">↻</span></button></div></div></section>
+
+    <section class="section how-section" id="hoe-werkt-het"><div class="shell"><div class="section-lead how-lead"><div><p class="overline">Zo werkt het</p><h2>Gewoon even overleggen.</h2></div><p>Geen winkelmandje of automatische betaling. Je stemt je bestelling persoonlijk af met Juup.</p></div><div class="steps-grid"><div class="step"><span class="step-number">01</span><h3>Kijk rustig rond</h3><p>Bekijk de productgroepen en zet op je wensenlijst wat je aanspreekt.</p></div><div class="step"><span class="step-number">02</span><h3>Stuur een bericht</h3><p>Deel je wensen via WhatsApp of mail en stel gerust je vragen.</p></div><div class="step"><span class="step-number">03</span><h3>Stem samen af</h3><p>Juup laat weten wat beschikbaar is, wat het kost en hoe je het kunt ontvangen.</p></div></div></div></section>
+
+    <section class="contact-section" id="contact"><div class="shell contact-layout"><div class="contact-intro"><p class="overline overline-light">Contact</p><h2>Iets op het oog?</h2><p>App of mail Juup. Dan hoor je persoonlijk wat er mogelijk is.</p><a href="https://wa.me/31682670111?text=Hoi%20Juup%2C%20ik%20heb%20een%20vraag%20over%20CASA%20VINOLIO." target="_blank" rel="noopener noreferrer">WhatsApp <span>06 8267 0111 ↗</span></a><a href="mailto:juupbiesboer@gmail.com">E-mail <span>juupbiesboer@gmail.com ↗</span></a></div><div class="form-panel"><h3>Stuur je wensen</h3><p>Vul hieronder in wat je zoekt. We zetten je bericht klaar in WhatsApp; je verstuurt het zelf.</p><form id="contact-form"><label for="contact-name">Naam</label><input id="contact-name" name="name" autocomplete="name" maxlength="100" placeholder="Hoe heet je?" required><label for="contact-message">Waar ben je naar op zoek?</label><textarea id="contact-message" name="message" rows="4" maxlength="1400" placeholder="Bijvoorbeeld: ik zoek een mooie Italiaanse wijn voor bij het eten" required></textarea><button class="button button-green form-submit" type="submit">Open in WhatsApp <span aria-hidden="true">↗</span></button></form><p class="form-small">Er worden geen gegevens opgeslagen via dit formulier.</p></div></div></section>
+
+    <section class="faq-section"><div class="shell faq-layout"><div><p class="overline">Veelgestelde vragen</p><h2>Goed om te weten.</h2></div><div class="faq-items"><details><summary>Kan ik direct online betalen?</summary><p>Nog niet. Je geeft je wensen door en stemt het aanbod, de prijs en betaling af met Juup.</p></details><details><summary>Kan ik ook een cadeau bestellen?</summary><p>Vraag Juup naar de mogelijkheden voor een cadeau of een samengesteld pakket.</p></details><details><summary>Hoe zit het met wijn en leeftijdscontrole?</summary><p>Wijn is uitsluitend voor personen van 18 jaar en ouder. Bij aankoop en aflevering gelden de wettelijke leeftijdscontroleverplichtingen.</p></details></div></div></section>
+  </main>
+  <footer class="footer"><div class="shell footer-main"><div><img src="assets/logo.png" alt="CASA VINOLIO" class="footer-logo"><p>Italiaanse wijn, olijfolie en delicatessen.<br>Met aandacht gekozen door Juup.</p></div><div class="footer-nav"><a href="#assortiment">Assortiment</a><a href="#juup">Over Juup</a><a href="#hoe-werkt-het">Zo werkt het</a><a href="#contact">Contact</a></div><div class="footer-contact"><span>Den Burg · Texel</span><a href="mailto:juupbiesboer@gmail.com">juupbiesboer@gmail.com</a><a href="https://wa.me/31682670111">06 8267 0111</a><div class="footer-nix"><strong>NIX18</strong> Geen alcohol onder de 18.</div></div></div><div class="shell footer-bottom"><span>© 2026 CASA VINOLIO · Conceptwebsite</span><span>Beeld: <a href="https://unsplash.com/de/fotos/eine-baumreihe-mitten-auf-einem-feld-_v5HCKSZOkA" target="_blank" rel="noopener noreferrer">Unsplash</a> · De beelden dienen ter sfeerimpressie.</span></div></footer>
+
+  <button class="mobile-wishlist" type="button" id="mobile-open-wishes">Bekijk mijn wensen <span class="mobile-count" id="mobile-count" hidden>0</span></button>
+  <dialog class="wishlist-dialog" id="wishes-dialog" aria-labelledby="wishes-heading"><div class="wishlist-head"><h2 id="wishes-heading">Mijn wensen</h2><button type="button" id="close-wishes" aria-label="Sluit wensenlijst">×</button></div><div class="wishlist-body"><p>Voeg toe wat je aanspreekt. Juup vertelt je daarna wat er beschikbaar is en wat het kost.</p><ul id="wishes-items" class="wishes-items"></ul><div class="wishes-empty" id="wishes-empty">Je hebt nog niets toegevoegd. Bekijk het assortiment en kies wat je interessant vindt.</div><label for="wishes-name">Je naam (optioneel)</label><input id="wishes-name" maxlength="100" placeholder="Jouw naam"><label for="wishes-note">Aanvullende wensen (optioneel)</label><textarea id="wishes-note" maxlength="900" rows="3" placeholder="Bijvoorbeeld: voor een diner met vier personen"></textarea><button id="send-wishes" class="button button-green" type="button">Deel via WhatsApp ↗</button><p class="dialog-fineprint">Je verstuurt het WhatsApp-bericht zelf. De lijst is vrijblijvend.</p></div></dialog>
+</body>
+</html>
